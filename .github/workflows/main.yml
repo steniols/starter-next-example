@@ -1,0 +1,16 @@
+name: End-to-end tests
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+           record: true
+           start: yarn run dev
+        env:
+          # pass the Dashboard record key as an environment variable
+          CYPRESS_RECORD_KEY: 05526010-756d-4738-a272-c1b99b06a31a
