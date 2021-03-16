@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <ImageExample />
         <h1>
-          Página inicial...
+          Página inicial
         </h1>
       </main>
     </div>
