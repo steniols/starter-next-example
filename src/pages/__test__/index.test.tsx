@@ -5,5 +5,5 @@ import Home from '../index';
 
 it('should render Header', () => {
   const { getByText } = render(<Home />);
-  expect(getByText('Página inicial...')).toBeTruthy();
+  expect(getByText('Página inicial')).toBeTruthy();
 });
