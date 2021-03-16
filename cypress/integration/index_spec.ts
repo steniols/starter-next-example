@@ -3,7 +3,7 @@ describe('The Home Page', () => {
     cy.visit('/');
   });
   it('successfully loads title', () => {
-    cy.contains('Página inicial......');
+    cy.contains('Página inicial');
   });
 });
 
